@@ -1,6 +1,27 @@
 @charset "UTF-8";
 /* CSS Document */
 
+body {
+	font-family: 'Average Sans', Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #333;
+	background-color: #fff;
+	border-top: 10px solid #333;
+}
+
+p {
+	line-height: 20px;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	color: #ccc;
+}
+
 .hidden {
 	display: none;
 }
@@ -35,11 +56,51 @@ header {
 
 .mainNav {
 	display: flex;
-	background-color: black;
 	width: 410px;
 	height: 40px;
 	margin-top: 40px;
 	margin-right: 30px;
+}
+
+.mainNav ul {
+	text-transform: uppercase;
+	margin-top: 0;
+	display: flex;
+	flex-direction: row;
+}
+
+.mainNav ul li a {
+	display: block;
+	background-color: red;
+	color: #fff;
+	margin-left: 15px;
+	text-align: center;
+	padding: 8px;
+	font-size: 12px;
+	font-weight: 600;
+	text-decoration: none;
+
+	border-radius: 25px;
+	background: #ff3019;
+	background: -moz-linear-gradient(top,  rgba(174,188,191,1) 0%, rgba(110,119,116,1) 27%, rgba(10,14,10,1) 74%, rgba(10,8,9,1) 100%); /* FF3.6-15 */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(174,188,191,1)), color-stop(27%,rgba(110,119,116,1)), color-stop(74%,rgba(10,14,10,1)), color-stop(100%,rgba(10,8,9,1))); /* Chrome4-9,Safari4-5 */
+	background: -webkit-linear-gradient(top,  rgba(174,188,191,1) 0%,rgba(110,119,116,1) 27%,rgba(10,14,10,1) 74%,rgba(10,8,9,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: -o-linear-gradient(top,  rgba(174,188,191,1) 0%,rgba(110,119,116,1) 27%,rgba(10,14,10,1) 74%,rgba(10,8,9,1) 100%); /* Opera 11.10-11.50 */
+	background: -ms-linear-gradient(top,  rgba(174,188,191,1) 0%,rgba(110,119,116,1) 27%,rgba(10,14,10,1) 74%,rgba(10,8,9,1) 100%); /* IE10 preview */
+	background: linear-gradient(to bottom,  rgba(174,188,191,1) 0%,rgba(110,119,116,1) 27%,rgba(10,14,10,1) 74%,rgba(10,8,9,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aebcbf', endColorstr='#0a0809',GradientType=0 ); /* IE6-9 */
+}
+
+
+.mainNav ul li a:hover {
+	background: rgb(10,8,9);
+	background: -moz-linear-gradient(top,  rgba(10,8,9,1) 0%, rgba(10,14,10,1) 26%, rgba(110,119,116,1) 73%, rgba(174,188,191,1) 100%); /* FF3.6-15 */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(10,8,9,1)), color-stop(26%,rgba(10,14,10,1)), color-stop(73%,rgba(110,119,116,1)), color-stop(100%,rgba(174,188,191,1))); /* Chrome4-9,Safari4-5 */
+	background: -webkit-linear-gradient(top,  rgba(10,8,9,1) 0%,rgba(10,14,10,1) 26%,rgba(110,119,116,1) 73%,rgba(174,188,191,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: -o-linear-gradient(top,  rgba(10,8,9,1) 0%,rgba(10,14,10,1) 26%,rgba(110,119,116,1) 73%,rgba(174,188,191,1) 100%); /* Opera 11.10-11.50 */
+	background: -ms-linear-gradient(top,  rgba(10,8,9,1) 0%,rgba(10,14,10,1) 26%,rgba(110,119,116,1) 73%,rgba(174,188,191,1) 100%); /* IE10 preview */
+	background: linear-gradient(to bottom,  rgba(10,8,9,1) 0%,rgba(10,14,10,1) 26%,rgba(110,119,116,1) 73%,rgba(174,188,191,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a0809', endColorstr='#aebcbf',GradientType=0 ); /* IE6-9 */
 }
 
 .slider {
@@ -73,9 +134,12 @@ header {
 
 .promoImg {
 	display: flex;
-	background-color: black;
 	width: 300px;
 	height: 200px;
+}
+
+.promoImg img {
+	border-radius: 5px;
 }
 
 .promoText {
@@ -90,15 +154,59 @@ header {
 	margin: 0 auto;
 	width: 940px;
 	height: 123px;
-	background-color: black;
 	margin-top: 65px;
+	padding-top: 30px;
 }
 
-.footerNavInfo {
+.description p {
+	text-align: center;
+	font-size: 35px;
+}
+
+.footer {
+	border-top: 1px solid;
 	display: flex;
-	background-color: black;
+	flex-direction: row;
 	width: 1000px;
 	height: 77px;
 	margin: 0 auto;
 	margin-top: 70px;
+	text-transform: uppercase;
+	background-color: black;
+}
+
+.footerNav {
+	display: flex;
+}
+
+#footerNav {
+	width: 500px;
+	height: 30px;
+	text-transform: uppercase;
+}
+
+.footerNav ul li {
+	display: inline;
+	font-size: 12px;
+	font-weight: 600;
+	margin-right: 20px;
+	padding-top: 20px;
+}
+
+.footerNav ul li a {
+	color: #666;
+	-webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in;
+}
+
+.footerNav ul li a:hover {
+	color: #333;
+	border-bottom: solid 2px #333;
+	padding-bottom: 2px;
+}
+
+.copyRight {
+	margin-left: auto;
 }
