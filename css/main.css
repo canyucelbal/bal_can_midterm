@@ -209,7 +209,7 @@ header {
 	display: flex;
 	width: 800px;
 	height: 123px;
-	padding-top: 30px;
+	padding-top: 20px;
 	padding-left: 60px;
 	background-color: black;
 	margin-bottom: 30px;
@@ -218,8 +218,8 @@ header {
 }
 
 .intro p {
-	text-align: center;
-	font-size: 25px;
+	text-align: left;
+	font-size: 18px;
 }
 
 
