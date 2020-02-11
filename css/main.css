@@ -104,12 +104,38 @@ header {
 
 .slider {
 	display: flex;
-	background-color: black;
 	width: 940px;
 	height: 260px;
 	margin: 0 auto;
 	margin-top: 20px;
 	margin-bottom: 15px;
+}
+
+.slider img {
+	animation-name: radialEntry;
+	animation-duration: 3s;
+}
+
+@keyframes radialEntry {
+	0% {
+		border-radius: 100% 100% 100% 100%;
+		transform: scale(2.5);
+		opacity: 0;
+	}
+
+	30% {
+		opacity: 1;
+	}
+
+	90% {
+		opacity: .8;
+	}
+
+	100% {
+		transform: scale(1);
+		opacity: 1;
+		border-radius: 0 0 0 0;
+	}
 }
 
 .seperator {
@@ -139,6 +165,24 @@ header {
 
 .promoImg img {
 	border-radius: 5px;
+	animation-name: opacityEntry;
+	animation-duration: 3s;
+}
+
+@keyframes opacityEntry {
+	0% {
+		border-radius: 20% 20% 20% 20%;
+		opacity: 0;
+	}
+
+	90% {
+		opacity: .1;
+	}
+
+	100% {
+		opacity: 1;
+		border-radius: 0 0 0 0;
+	}
 }
 
 .promoText {
@@ -170,6 +214,23 @@ header {
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
 	padding-top: 25px;
+	animation-name: textOpacity;
+	animation-duration: 3s;
+}
+
+@keyframes textOpacity {
+	0% {
+		border-radius: 20% 20% 20% 20%;
+		opacity: 0;
+	}
+
+	90% {
+		opacity: .8;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
 
 .footer {
