@@ -1,4 +1,4 @@
-# Midterm Project
+# 1056 Web Development - Midterm Project
 
 <img src="images/logo.png">
 
@@ -47,4 +47,4 @@ Can Yucel Bal<img src="images/favicon.png">
 </ul>
 
 ## CopyRight
-© All Rights Reserved - 2019 Can Yucel Bal
+© All Rights Reserved - 2020 Can Yucel Bal
