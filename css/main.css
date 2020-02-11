@@ -25,7 +25,7 @@ a:hover, a:active {
 #container {
 	width: 1000px;
 	margin: 0 auto;
-	background-color: #e9fcff;
+	background-color: #ebebeb;
 }
 
 .topBar {
@@ -76,6 +76,8 @@ header {
 	font-size: 12px;
 	font-weight: 600;
 	text-decoration: none;
+	font-family: 'Russo One', sans-serif;
+	font-weight: 200;
 
 	border-radius: 25px;
 	background: #ff3019;
@@ -133,7 +135,6 @@ header {
 	display: flex;
 	width: 300px;
 	height: 200px;
-	background-color: black;
 }
 
 .promoImg img {
@@ -142,23 +143,33 @@ header {
 
 .promoText {
 	display: flex;
-	background-color: black;
 	width: 300px;
 	height: 50px;
 	margin-top: 40px;
 }
+
+.promoText p {
+	font-family: 'Sriracha', cursive;
+	font-size: 18px;
+	margin: 0 auto;
+}
+
 .description {
 	display: flex;
 	margin: 0 auto;
 	width: 940px;
 	height: 123px;
 	margin-top: 65px;
-	padding-top: 30px;
 }
 
 .description p {
 	text-align: center;
 	font-size: 35px;
+	font-family: 'Libre Baskerville', serif;
+	background-color: #c7c8ca;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	padding-top: 25px;
 }
 
 .footer {
@@ -211,7 +222,7 @@ header {
 	height: 123px;
 	padding-top: 20px;
 	padding-left: 60px;
-	background-color: black;
+	background-color: #c7c8ca;
 	margin-bottom: 30px;
 	margin-left: auto;
 	border-top-left-radius: 20px;
@@ -220,6 +231,7 @@ header {
 .intro p {
 	text-align: left;
 	font-size: 18px;
+	font-family: 'Sriracha', cursive;
 }
 
 
@@ -333,8 +345,32 @@ header {
 	display: flex;
 	width: 480px;
 	height: 500px;
-	background-color: black;
 	border-right: 2px solid;
+}
+
+.contactForm label {
+	text-align: left;
+	font-family: 'Sriracha', cursive;
+	font-size: 15px;
+}
+
+input , textarea {
+	font-size: 11px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
+	width: 300px;
+	height: 10px;
+	background-color: #efefef;
+	display: block;
+	border: 1px solid #999;
+	color: #ccc;
+}
+
+
+#comments {
+	width: 360px;
+	height: 100px;
 }
 
 .mapInfo {
@@ -345,8 +381,12 @@ header {
 .contactInfo {
 	height: 100px;
 	width: 480px;
-	background-color: black;
 	margin-bottom: 10px;
+}
+
+.contactInfo address {
+	font-family: 'Sriracha', cursive;
+	font-size: 16px;
 }
 
 .contactMap {

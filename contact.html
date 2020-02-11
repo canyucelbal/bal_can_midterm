@@ -3,6 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>Odor Eaters - Contact</title>
+	<link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Sriracha&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/reset.css" media="screen">
 	<link rel="stylesheet" type="text/css" href="css/main.css" media="screen">
 </head>
@@ -34,17 +37,53 @@
 		</header>
 		
 		<section class="contact">
-			<section class="contactForm"></section>
+			<h2 class="hidden">Contact Form And Address</h2>
+			<section class="contactForm">
+				<h3 class="hidden">Contact Form</h3>
+				<form id="contactForm" action="form.php" method="post">
+					<label>Name: (required)</label>
+					<input type="text" required size="30" placeholder="Enter your name">
+					<label>Email: (required)</label>
+					<input type="email" required size="30" placeholder="Enter your email">
+						
+					<label>Phone: (required)</label>
+					<input type="tel" required size="30" placeholder="Enter phone number">
+					
+					<label>Comments:</label>
+					<textarea id="comments" required cols="50" rows="8"></textarea>
+						
+					<label>What is 5 + 4?</label>
+					<input type="text" required size="30" placeholder="What is 5 + 4?">
+						
+					<input id="submit" type="submit" value="Submit">
+				</form>
+			</section>
+
 			<section class="mapInfo">
-				<section class="contactInfo"></section>
-				<section class="contactMap"></section>
+				<h3 class="hidden">Address and Map</h3>
+				<section class="contactInfo">
+					<h4 class="hidden">Address</h4>
+				<address>
+					1001 Ontario Boulevard<br>
+					P.O. Box 7125<br>
+					London, Ontario, Canada, N5R 3R6<br>
+					Phone: 123-456-7890<br>
+					Fax: 987-065-4321<br>
+				</address>
+				
+				</section>
+				<section class="contactMap">
+					<h4 class="hidden">Maps</h4>
+					<img src="images/google_maps.jpg" alt="Google Maps Example"> <!-- We haven't learn to place Google Maps -->
+				</section>
 			</section>	
 		</section>
 		
 		<footer>
 			<section class="footer">
+				<h2 class="hidden">Footer</h2>
 				<section class="footerNav">
-				<h2 class="hidden">Footer Nav</h2>
+				<h2 class="hidden">Footer Navigation</h2>
 				<ul>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="craft.html">Craft</a></li>
@@ -54,6 +93,7 @@
 				</ul>
 				</section>
 				<section class="copyRight">
+					<h3 class="hidden">Copyright</h3>
 					<p>&copy; 2019 Odor Eaters Brewery</p>
 				</section>
 			</section>
